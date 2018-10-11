@@ -22,7 +22,7 @@
                 }
             ],
             "source": "clean.R",
-            "target": "data.csv"
+            "target": "clean_data.csv"
         }
     ],
     "nodes": [
@@ -35,13 +35,13 @@
             "task_status": "in progress"
         },
         {
-            "name": "data.csv"
+            "name": "clean_data.csv"
         },
         {
             "desc": "",
             "name": "merge_data.R"
         }
     ],
-    "updated_at": "2018-10-11 15:48:54",
+    "updated_at": "2018-10-11 15:49:22",
     "url": "https://github.com/fall2018-saltz/ist687_homework_7"
 }
