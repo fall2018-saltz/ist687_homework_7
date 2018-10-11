@@ -1,5 +1,6 @@
 
 library("ggplot2")
+library("ggmap")
 cleandata2 <- USArrests
 
 
