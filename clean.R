@@ -25,5 +25,5 @@ rownames(clean_data) <- clean_data$stateName
 
 # convert state names to lowercase
 
-clean_data$stateName <- tolower(dfStates$stateName)
+clean_data$stateName <- tolower(clean_data$stateName)
 
