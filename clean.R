@@ -23,4 +23,5 @@ clean_data <- func1(raw_data)
 # saves the state names as row names
 rownames(clean_data) <- clean_data$stateName
 
+# convers state names to lowercase
 
