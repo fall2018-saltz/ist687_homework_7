@@ -19,4 +19,4 @@ clean_data_merged$statearea <- state.area
 clean_data_merged$statecenter <- state.center
 clean_data_merged$statename <- state.name
 
-head(clean_data_merged)
+state.center
