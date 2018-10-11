@@ -16,7 +16,7 @@ cleandata2$stateName <- x
 clean_data_merged <- merge(clean_data,cleandata2,by="stateName")
 
 clean_data_merged$statearea <- state.area
-clean_data_merged$statecenter <- state.center
+clean_data_merged$statecenterx <- state.center$x
 clean_data_merged$statename <- state.name
 
 state.center
