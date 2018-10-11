@@ -48,10 +48,16 @@
             "name": "clean_data.csv"
         },
         {
+            "assigned_to": "eashani",
             "desc": "",
-            "name": "merge_data.R"
+            "name": "merge_data.R",
+            "task_status": "in progress"
+        },
+        {
+            "desc": "",
+            "name": "map1.R"
         }
     ],
-    "updated_at": "2018-10-11 15:49:49",
+    "updated_at": "2018-10-11 17:27:59",
     "url": "https://github.com/fall2018-saltz/ist687_homework_7"
 }
