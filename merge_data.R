@@ -14,7 +14,9 @@ cleandata2$stateName <- x
 # the merge function combines dataframes based on common columns
 # here it merges the dataframes by the common column stateName
 clean_data_merged <- merge(clean_data,cleandata2,by="stateName")
-#head(clean_data_merged)
+
 clean_data_merged$statearea <- state.area
 clean_data_merged$statecenter <- state.center
 clean_data_merged$statename <- state.name
+
+head(clean_data_merged)
