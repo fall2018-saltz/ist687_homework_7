@@ -1,4 +1,5 @@
 
+# Repeat step B, but color code the map based on the murder rate of each state.
 library("ggplot2")
 library("ggmap")
 us <- map_data("state")
