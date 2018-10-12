@@ -18,7 +18,8 @@ options(scipen=999)
 map1 <- ggplot(clean_data_merged, aes(map_id = stateName))
 
 # geom_map is used to create the map similar to geom_point etc
-# expand_limits() is used to increase the range o fthe axes to include specific 
+# expand_limits() is used to increase the range of the axes to include specific 
+# values eg. making sure the map includes the range of the whole US map
 map1 <- map1 + expand_limits(x = us$long, y = us$lat) + coord_map()
 map1
 
