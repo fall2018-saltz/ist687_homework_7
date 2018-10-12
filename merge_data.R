@@ -22,6 +22,8 @@ clean_data_merged <- merge(clean_data,cleandata2,by="stateName")
 #saving the x and y co-ods of the center in separate variables
 statecenterx <- state.center$x
 statecentery <- state.center$y
+
+# use column bind to join the dataframe
 clean_data_merged <- cbind(clean_data_merged,state.area)
 clean_data_merged <- cbind(clean_data_merged,statecenterx)
 clean_data_merged <- cbind(clean_data_merged,statecentery)
