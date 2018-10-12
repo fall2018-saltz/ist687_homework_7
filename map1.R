@@ -18,6 +18,7 @@ options(scipen=999)
 map1 <- ggplot(clean_data_merged, aes(map_id = stateName))
 
 # geom_map is used to creat the map similar to geom_point etc
-map1 <- map1 + geom_map(map = us ,aes(fill= state.area))
-map1 <- map1 + coord_map()
+map1 <- map1 + expand_limits(x = us$long, y = us$lat) + coord_map()
+map1
+
 
