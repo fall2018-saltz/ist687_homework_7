@@ -13,3 +13,5 @@ map4 <- map4 + geom_map(map = us,aes(fill=Murder))+ scale_fill_gradient(low = "w
 map4 <- map4 + expand_limits(x = us$long, y = us$lat) + coord_map()
 map4 <- map4 + geom_point(data = clean_data_merged, mapping = aes(x = statecenterx, y = statecentery, size=population))
 x1
+x2
+y1
