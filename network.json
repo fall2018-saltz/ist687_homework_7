@@ -135,10 +135,15 @@
             "name": "map2.png"
         },
         {
+            "assigned_to": "eashani",
             "desc": "",
-            "name": "map3.R"
+            "name": "map3.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "map3.png"
         }
     ],
-    "updated_at": "2018-10-12 02:14:01",
+    "updated_at": "2018-10-12 02:18:40",
     "url": "https://github.com/fall2018-saltz/ist687_homework_7"
 }
