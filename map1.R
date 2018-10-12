@@ -9,6 +9,7 @@ library("mapdata")
 
 # map_data is a function that turns a 
 # series of points along an outline into a data frame of those points.
+# the "state" attribute is a dataframe with details about US states
 us <- map_data("state")
 options(scipen=999)
 map1 <- ggplot(clean_data_merged, aes(map_id = stateName))
