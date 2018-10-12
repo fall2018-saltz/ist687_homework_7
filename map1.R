@@ -4,8 +4,7 @@
 # this uses the libraries the following libraries
 library("ggplot2")
 library("ggmap")
-library("maps")
-library("mapdata")
+
 
 # map_data is a function that turns a 
 # series of points along an outline into a data frame of those points.
