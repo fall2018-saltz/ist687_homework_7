@@ -16,7 +16,8 @@ cleandata2 <- cbind(cleandata2,stateName, stringsAsFactors=FALSE)
 
 clean_data_merged <- merge(clean_data,cleandata2,by="stateName")
 
-#Add the area of each state, and the center of each state, to the merged dataframe using the ‘state.center’, ‘state.center’ and ‘state.name’ vectors
+# Add the area of each state, and the center of each state, to the merged dataframe
+# using the ‘state.center’, ‘state.center’ and ‘state.name’ vectors
 statecenterx <- state.center$x
 statecentery <- state.center$y
 clean_data_merged <- cbind(clean_data_merged,state.area)
