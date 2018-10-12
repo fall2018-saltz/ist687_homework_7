@@ -27,4 +27,4 @@ rownames(clean_data) <- clean_data$stateName
 
 clean_data$stateName <- tolower(clean_data$stateName)
 
-str(clean_data)
+clean_data$stateName
