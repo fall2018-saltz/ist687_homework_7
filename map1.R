@@ -17,6 +17,7 @@ options(scipen=999)
 # use ggplot to create an empty plot
 map1 <- ggplot(clean_data_merged, aes(map_id = stateName))
 
+map1 <- map1 + geom_map(map = us ,aes(fill= state.area))
 # geom_map is used to create the map similar to geom_point etc
 # expand_limits() is used to increase the range of the axes to include specific 
 # values eg. making sure the map includes the range of the whole US map
