@@ -19,6 +19,8 @@ y2 <- latlon$lat+10
 
 # similar map as before
 map4 <- ggplot(clean_data_merged, aes(map_id = stateName))
+
+# add xlim and ylim to the map which set the limits and can be used to zoom in
 map4 <- map4 + geom_map(map = us,aes(fill=Murder))+ scale_fill_gradient(low = "white", high = "red") + xlim(c(x1,x2)) + ylim(c(y1,y2))        
 map4 <- map4 + expand_limits(x = us$long, y = us$lat) + coord_map()
 map4 <- map4 + geom_point(data = clean_data_merged, mapping = aes(x = statecenterx, y = statecentery, size=population))
