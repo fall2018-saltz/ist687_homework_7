@@ -24,4 +24,4 @@ map2 <- map2 + geom_map(map = us,aes(fill=Murder))+ scale_fill_gradient(low = "b
 # values eg. making sure the map includes the range of the whole US
 # coord_map() ensures that the map is proportional
 map2 <- map2 + expand_limits(x = us$long, y = us$lat) + coord_map()
-map2
+map2 <- map2 + ggtitle("murder rate per state")
