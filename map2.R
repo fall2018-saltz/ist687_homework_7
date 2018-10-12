@@ -10,7 +10,11 @@ library("ggmap")
 # series of points along an outline into a data frame of those points.
 # the "state" attribute is a dataframe with details about US
 us <- map_data("state")
+
+#changes scientific notations in plots to numeric
 options(scipen=999)
+
+# use ggplot to create an empty
 map2 <- ggplot(clean_data_merged, aes(map_id = stateName))
 map2 <- map2 + geom_map(map = us,aes(fill=Murder))+ scale_fill_gradient(low = "black", high = "red")             
 map2 <- map2 + expand_limits(x = us$long, y = us$lat) + coord_map()
