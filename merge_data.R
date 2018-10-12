@@ -5,7 +5,7 @@ cleandata2 <- USArrests
 
 
 # save row names as a separate variable
-x <- as.vector(rownames(USArrests))
+x <- as.vector(rownames(USArrests),stringsAsFactors=FALSE)
 
 # add this column to the dataframe as a column names stateName
 cleandata2 <- cbind(cleandata2,x)
@@ -20,5 +20,5 @@ str(cleandata2)
 #clean_data_merged$statecenterx <- as.vector(state.center$x)
 #clean_data_merged$statecentery <- as.vector(state.center$y)
 #clean_data_merged$statename <- as.vector(state.name)
-str(clean_data_merged)
+#str(clean_data_merged)
 #as.data.frame(state.area)
