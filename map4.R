@@ -10,11 +10,14 @@ options(scipen=999)
 
 # get the latitude and longitude of NYC from the datasciencetoolkit 
 latlon <- geocode("new york city, ny",source="dsk")
+
 # calculate the approximate limits
 y1 <- latlon$lat-10
 x1 <- latlon$lon-10
 x2 <- latlon$lon+10
 y2 <- latlon$lat+10
+
+# similar map as before
 map4 <- ggplot(clean_data_merged, aes(map_id = stateName))
 map4 <- map4 + geom_map(map = us,aes(fill=Murder))+ scale_fill_gradient(low = "white", high = "red") + xlim(c(x1,x2)) + ylim(c(y1,y2))        
 map4 <- map4 + expand_limits(x = us$long, y = us$lat) + coord_map()
