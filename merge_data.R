@@ -17,6 +17,7 @@ cleandata2 <- cbind(cleandata2,stateName, stringsAsFactors=FALSE)
 clean_data_merged <- merge(clean_data,cleandata2,by="stateName")
 
 #clean_data_merged
+statecenterx <- state.center$x
 clean_data_merged <- cbind(clean_data_merged,as.data.frame(state.area))
 clean_data_merged <- cbind(clean_data_merged,state.center$x)
 clean_data_merged <- as.vector(state.center$y)
