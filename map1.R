@@ -14,7 +14,9 @@ us <- map_data("state")
 
 #changes scientific notations in plots to numeric
 options(scipen=999)
+
+# use ggplot to create an empty plot
 map1 <- ggplot(clean_data_merged, aes(map_id = stateName))
 map1 <- map1 + geom_map(map = us ,aes(fill= state.area))
 map1 <- map1 + expand_limits(x = us$long, y = us$lat) + coord_map()
-map1
+
