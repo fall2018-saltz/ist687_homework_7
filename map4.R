@@ -1,4 +1,8 @@
 
+# Repeat step C, but only show the states in the north east
+# Hint: get the lat and lon of new york city
+# Hint: set the xlim and ylim to NYC +/- 10
+
 library("ggplot2")
 library("ggmap")
 us <- map_data("state")
