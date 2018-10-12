@@ -1,5 +1,7 @@
 
-# Show the population as a circle per state (the larger the population, the larger the circle), using the location defined by the center of each state
+# Show the population as a circle per state
+# the larger the population, the larger the circle
+# using the location defined by the center of each state
 
 library("ggplot2")
 library("ggmap")
