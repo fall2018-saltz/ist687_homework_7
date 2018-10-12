@@ -4,5 +4,4 @@ library("ggmap")
 us <- map_data("state")
 map1 <- ggplot(clean_data_merged, aes(map_id = stateName))
 map1 <- map1 + geom_map(map = us ,fill="white", color="black")
-
-str(clean_data_merged)
+map1 <- map1 + expand_limits(x = us$long, y = us$lat)
