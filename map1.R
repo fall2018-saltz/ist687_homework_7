@@ -1,7 +1,12 @@
 
 # Create a color coded map, based on the area of the state 
+
+# this uses the libraries ggplot2 and ggmap
 library("ggplot2")
 library("ggmap")
+library("maps")
+library("mapdata")
+#
 us <- map_data("state")
 options(scipen=999)
 map1 <- ggplot(clean_data_merged, aes(map_id = stateName))
