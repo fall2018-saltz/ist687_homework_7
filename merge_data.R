@@ -8,7 +8,7 @@ cleandata2 <- USArrests
 stateName <- as.vector(rownames(USArrests))
 
 # add this column to the dataframe as a column names stateName
-cleandata2 <- cbind(cleandata2,stateName, stringsAsFactors=FALSE)
+cleandata2 <- cbind(cleandata2,tolower(stateName), stringsAsFactors=FALSE)
 
 # merge the dataframes based on the stateName column in both the dataframes
 # the merge function combines dataframes based on common columns
@@ -17,7 +17,7 @@ str(clean_data)
 str(cleandata2)
 #clean_data_merged <- merge(clean_data,cleandata2,by="stateName")
 
-clean_data_merged
+#clean_data_merged
 #clean_data_merged <- cbind(clean_data_merged,as.data.frame(state.area))
 #clean_data_merged$statecenterx <- as.vector(state.center$x)
 #clean_data_merged$statecentery <- as.vector(state.center$y)
