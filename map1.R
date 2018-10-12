@@ -23,6 +23,6 @@ map1 <- map1 + geom_map(map = us ,aes(fill= state.area))
 # values eg. making sure the map includes the range of the whole US map
 # coord_map() ensures that the map is proportional
 map1 <- map1 + expand_limits(x = us$long, y = us$lat) + coord_map()
-map1
+map1 <- map1 + ggtitle("area of states")
 
 
