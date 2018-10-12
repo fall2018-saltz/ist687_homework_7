@@ -23,5 +23,6 @@ clean_data_merged <- cbind(clean_data_merged,state.area)
 clean_data_merged <- cbind(clean_data_merged,statecenterx)
 clean_data_merged <- cbind(clean_data_merged,statecentery)
 
+str(clean_data_merged)
 
 
