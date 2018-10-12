@@ -1,5 +1,6 @@
 
 # Repeat step B, but color code the map based on the murder rate of each state.
+#Show the population as a circle per state (the larger the population, the larger the circle), using the location defined by the center of each state
 library("ggplot2")
 library("ggmap")
 us <- map_data("state")
