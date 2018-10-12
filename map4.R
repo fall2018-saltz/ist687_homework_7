@@ -1,3 +1,4 @@
 
 library("ggplot2")
-latlon <- geocode("syracuse, ny")
+library("ggmap")
+latlon <- geocode("new york city, ny")
