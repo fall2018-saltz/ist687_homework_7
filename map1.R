@@ -11,6 +11,8 @@ library("mapdata")
 # series of points along an outline into a data frame of those points.
 # the "state" attribute is a dataframe with details about US states
 us <- map_data("state")
+
+#changes scientific notations in plots to numeric
 options(scipen=999)
 map1 <- ggplot(clean_data_merged, aes(map_id = stateName))
 map1 <- map1 + geom_map(map = us ,aes(fill= state.area))
