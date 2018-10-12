@@ -20,5 +20,5 @@ clean_data_merged <- merge(clean_data,cleandata2,by="stateName")
 #clean_data_merged$statecenterx <- as.vector(state.center$x)
 #clean_data_merged$statecentery <- as.vector(state.center$y)
 #clean_data_merged$statename <- as.vector(state.name)
-
-as.data.frame(state.area)
+str(clean_data_merged)
+#as.data.frame(state.area)
