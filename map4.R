@@ -15,3 +15,4 @@ map4 <- map4 + geom_point(data = clean_data_merged, mapping = aes(x = statecente
 x1
 x2
 y1
+y2
