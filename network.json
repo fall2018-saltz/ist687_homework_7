@@ -74,13 +74,18 @@
             "task_status": "in progress"
         },
         {
+            "assigned_to": "eashani",
             "desc": "",
-            "name": "map1.R"
+            "name": "map1.R",
+            "task_status": "in progress"
         },
         {
             "name": "clean_data_merged.csv"
+        },
+        {
+            "name": "map1.png"
         }
     ],
-    "updated_at": "2018-10-11 17:28:41",
+    "updated_at": "2018-10-12 00:34:24",
     "url": "https://github.com/fall2018-saltz/ist687_homework_7"
 }
