@@ -2,8 +2,13 @@
 # Repeat step B, but color code the map based on the murder rate of each state.
 # Show the population as a circle per state
 
+# this uses the libraries the following libraries
 library("ggplot2")
 library("ggmap")
+
+# map_data is a function that turns a 
+# series of points along an outline into a data frame of those points.
+# the "state" attribute is a dataframe with details about US
 us <- map_data("state")
 options(scipen=999)
 map2 <- ggplot(clean_data_merged, aes(map_id = stateName))
