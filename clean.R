@@ -7,7 +7,7 @@ func1 <- function(states){
   # and the first four columns SUMLEV	REGION	DIVISION	STATE
 
   dfStates <- states[,c(-1,-2,-3,-4)]
-  dfStates <- dfStates[c(-1,-9,-53),] 
+  dfStates <- dfStates[c(-1,-10,-53),] 
 
   # renaming the remaining columns
   # the colnames function is used to rename columns and the rownames function is used for rows
