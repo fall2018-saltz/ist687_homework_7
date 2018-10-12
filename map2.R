@@ -19,6 +19,7 @@ map2 <- ggplot(clean_data_merged, aes(map_id = stateName))
 
 # geom_map is used to create the map similar to geom_point
 map2 <- map2 + geom_map(map = us,aes(fill=Murder))+ scale_fill_gradient(low = "black", high = "red")             
+
 # expand_limits() is used to increase the range of the axes to include specific 
 # values eg. making sure the map includes the range of the whole US
 # coord_map() ensures that the map is proportional
