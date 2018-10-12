@@ -15,9 +15,10 @@ cleandata2$stateName <- x
 # here it merges the dataframes by the common column stateName
 clean_data_merged <- merge(clean_data,cleandata2,by="stateName")
 
-clean_data_merged$statearea <- state.area
-clean_data_merged$statecenterx <- state.center$x
-clean_data_merged$statecentery <- state.center$y
-clean_data_merged$statename <- state.name
 
-tail(clean_data_merged)
+#clean_data_merged$statearea <- state.area
+#clean_data_merged$statecenterx <- state.center$x
+#clean_data_merged$statecentery <- state.center$y
+#clean_data_merged$statename <- state.name
+state.area
+#tail(clean_data_merged)
