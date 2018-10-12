@@ -10,7 +10,7 @@ x <- as.vector(rownames(USArrests))
 # add this column to the dataframe as a column names stateName
 cleandata2 <- cbind(cleandata2,x)
 cleandata2$x<- droplevels(cleandata2$x)
-
+str(cleandata2)
 # merge the dataframes based on the stateName column in both the dataframes
 # the merge function combines dataframes based on common columns
 # here it merges the dataframes by the common column stateName
