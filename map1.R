@@ -17,7 +17,8 @@ options(scipen=999)
 # use ggplot to create an empty plot
 map1 <- ggplot(clean_data_merged, aes(map_id = stateName))
 
-# geom_map is used to creat the map similar to geom_point etc
+# geom_map is used to create the map similar to geom_point etc
+# expand_limits() is used to increase the range o fthe axes to include specific 
 map1 <- map1 + expand_limits(x = us$long, y = us$lat) + coord_map()
 map1
 
