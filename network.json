@@ -120,11 +120,6 @@
             "name": "scprc_est_2017_18_pop_res.csv"
         },
         {
-            "assigned_to": "eashani",
-            "name": "clean.R",
-            "task_status": "in progress"
-        },
-        {
             "name": "clean_data.csv"
         },
         {
@@ -166,8 +161,14 @@
         {
             "desc": "",
             "name": "map4.R"
+        },
+        {
+            "assigned_to": "eashani",
+            "desc": "",
+            "name": "clean.R",
+            "task_status": "completed"
         }
     ],
-    "updated_at": "2018-10-12 02:44:43",
+    "updated_at": "2018-10-12 02:46:48",
     "url": "https://github.com/fall2018-saltz/ist687_homework_7"
 }
