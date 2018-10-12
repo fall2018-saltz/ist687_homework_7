@@ -15,8 +15,8 @@ cleandata2$stateName <- x
 # here it merges the dataframes by the common column stateName
 clean_data_merged <- merge(clean_data,cleandata2,by="stateName")
 
-clean_data_merged$statearea <- NA
-clean_data_merged$statearea <- as.vector(state.area)
+
+clean_data_merged <- cbind(clean_data_merged,state.area)
 #clean_data_merged$statecenterx <- as.vector(state.center$x)
 #clean_data_merged$statecentery <- as.vector(state.center$y)
 #clean_data_merged$statename <- as.vector(state.name)
