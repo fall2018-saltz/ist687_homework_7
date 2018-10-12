@@ -1,5 +1,5 @@
 
 library("ggplot")
-map.simple <- ggplot(dummyDF, aes(map_id = state))
-> map.simple <- map.simple + geom_map(map = us,
-+ fill="white", color="black")
+library("ggmap")
+map1 <- ggplot(clean_data_merged, aes(map_id = state))
+map1 <- map1 + geom_map(map = us,fill="white", color=statearea)
