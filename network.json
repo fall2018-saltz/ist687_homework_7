@@ -103,6 +103,16 @@
             ],
             "source": "map3.R",
             "target": "map3.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "clean_data_merged",
+                    "type": "csv"
+                }
+            ],
+            "source": "clean_data_merged.csv",
+            "target": "map4.R"
         }
     ],
     "nodes": [
@@ -158,6 +168,6 @@
             "name": "map4.R"
         }
     ],
-    "updated_at": "2018-10-12 02:44:15",
+    "updated_at": "2018-10-12 02:44:43",
     "url": "https://github.com/fall2018-saltz/ist687_homework_7"
 }
