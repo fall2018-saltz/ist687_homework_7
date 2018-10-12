@@ -20,4 +20,4 @@ clean_data_merged$statecenterx <- state.center$x
 clean_data_merged$statecentery <- state.center$y
 clean_data_merged$statename <- state.name
 
-head(clean_data_merged)
+tail(clean_data_merged)
