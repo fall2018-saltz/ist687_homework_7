@@ -179,11 +179,11 @@
         },
         {
             "assigned_to": "eashani",
-            "desc": "Read in the census dataset and the USArrests and merge them \r\n(just like HW6)\r\nAdd the area of each state, and the center of each state, to the merged dataframe, using the \u2018state.center\u2019, \u2018state.center\u2019 and \u2018state.name\u2019 vectors\r\n",
+            "desc": "Read in the census dataset ",
             "name": "clean.R",
             "task_status": "completed"
         }
     ],
-    "updated_at": "2018-10-18 02:58:25",
+    "updated_at": "2018-10-18 02:58:44",
     "url": "https://github.com/fall2018-saltz/ist687_homework_7"
 }
